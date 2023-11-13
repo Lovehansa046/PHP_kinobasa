@@ -34,12 +34,12 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-right" id="navbarCollapse">
                     <ul class="nav nav-pills">
-                        <li class="active"> <a href="/KinoBaza_PHP/html/index.html">главная</a></li>
-                        <li> <a href="/KinoBaza_PHP/html/films.html">фильмы</a> </li>
-                        <li> <a href="/KinoBaza_PHP/html/serials.html">сериалы</a> </li>
-                        <li> <a href="/KinoBaza_PHP/html/rating.html">рейтинг фильмов</a> </li>
-                        <li><a href="/KinoBaza_PHP/html/rating_s.html">рейтинг сериалов</a></li>
-                        <li> <a href="/KinoBaza_PHP/html/contact.html">контакты</a> </li>
+                        <li class="active"> <a href="/KinoBaza_PHP/index.php">главная</a></li>
+                        <li> <a href="/KinoBaza_PHP/views/films.php">фильмы</a> </li>
+                        <li> <a href="/KinoBaza_PHP/views/serials.php">сериалы</a> </li>
+                        <li> <a href="/KinoBaza_PHP/views/rating.php">рейтинг фильмов</a> </li>
+                        <li><a href="/KinoBaza_PHP/views/rating_s.php">рейтинг сериалов</a></li>
+                        <li> <a href="/KinoBaza_PHP/views/contact.php">контакты</a> </li>
                     </ul>
                 </div>
             </div>

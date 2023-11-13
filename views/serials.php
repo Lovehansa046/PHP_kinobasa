@@ -1,56 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Сериалы</title>
-	<link rel="stylesheet" href="/KinoBaza/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/KinoBaza/assets/css/style.css">
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="row">
-			<nav role="navigation" class="navbar navbar-inverse">
-				<div class="container">
-					<div class="navbar-header header">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="logo">
-										<a href="https://lovehansa046.github.io/"><img
-												src="/Img_logo/Логотип_общий_белый.png" alt="logo_img" class="logo_img"
-												width="300px"></a>
-									</div>
-									<h1><a href="/KinoBaza/html/index.html">КиноБаза</a></h1>
-									<p>Кино - наша страсть!</p>
-								</div>
-							</div>
-						</div>
+<?php  include '../views/templates/header.php';?>
 
-						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse navbar-right" id="navbarCollapse">
-						<ul class="nav nav-pills">
-							<li class="active"> <a href="/KinoBaza/html/index.html">главная</a></li>
-							<li> <a href="/KinoBaza/html/films.html">фильмы</a> </li>
-							<li> <a href="/KinoBaza/html/serials.html">сериалы</a> </li>
-							<li> <a href="/KinoBaza/html/rating.html">рейтинг фильмов</a> </li>
-							<li><a href="/KinoBaza/html/rating_s.html">рейтинг сериалов</a></li>
-							<li> <a href="/KinoBaza/html/contact.html">контакты</a> </li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</div>
 
-	<div class="wrapper">
+<div class="wrapper">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-9 col-lg-push-3">
@@ -71,7 +22,7 @@
 					<div class="row">
 						<div class="well clearfix">
 							<div class="col-lg-3 col-md-2 text-center">
-								<img src="/KinoBaza/assets/img/breakingbad.png" alt="во все тяжкие" class="img-thumbnail">
+								<img src="/KinoBaza_PHP/assets/img/breakingbad.png" alt="во все тяжкие" class="img-thumbnail">
 								<p>во все тяжкие</p>
 							</div>
 
@@ -81,7 +32,7 @@
 								</p>
 							</div>
 							<div class="col-lg-12 col-md-12">
-								<a href="/KinoBaza/serials/risk.html" class="btn btn-lg btn-warning pull-right">подробнее</a>
+								<a href="/KinoBaza_PHP/views/risk.php" class="btn btn-lg btn-warning pull-right">подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -89,7 +40,7 @@
 					<div class="row">
 						<div class="well clearfix">
 							<div class="col-lg-3 col-md-2 text-center">
-								<img src="/KinoBaza/assets/img/dead.png" alt="ходячие мертвецы" class="img-thumbnail">
+								<img src="/KinoBaza_PHP/assets/img/dead.png" alt="ходячие мертвецы" class="img-thumbnail">
 								<p>ходячие мертвецы</p>
 							</div>
 
@@ -99,15 +50,15 @@
 								</p>
 							</div>
 							<div class="col-lg-12 col-md-12">
-								<a href="/KinoBaza/serials/zombi.html" class="btn btn-lg btn-warning pull-right">подробнее</a>
-							
+								<a href="/KinoBaza_PHP/views/zombi.php" class="btn btn-lg btn-warning pull-right">подробнее</a>
+
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="well clearfix">
 							<div class="col-lg-3 col-md-2 text-center">
-								<img src="/KinoBaza/assets/img/xfiles.png" alt="секретные материалы" class="img-thumbnail">
+								<img src="/KinoBaza_PHP/assets/img/xfiles.png" alt="секретные материалы" class="img-thumbnail">
 								<p>секретные материалы</p>
 							</div>
 
@@ -117,15 +68,15 @@
 								</p>
 							</div>
 							<div class="col-lg-12 col-md-12">
-								<a href="/KinoBaza/serials/secret.html" class="btn btn-lg btn-warning pull-right">подробнее</a>
-							
+								<a href="/KinoBaza_PHP/views/secret.php" class="btn btn-lg btn-warning pull-right">подробнее</a>
+
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="well clearfix">
 							<div class="col-lg-3 col-md-2 text-center">
-								<img src="/KinoBaza/assets/img/silicon.png" alt="безумный макс" class="img-thumbnail">
+								<img src="/KinoBaza_PHP/assets/img/silicon.png" alt="безумный макс" class="img-thumbnail">
 								<p>Силиконовая долина макс</p>
 							</div>
 
@@ -135,13 +86,13 @@
 								</p>
 							</div>
 							<div class="col-lg-12 col-md-12">
-								<a href="/KinoBaza/serials/silicon.html" class="btn btn-lg btn-warning pull-right">подробнее</a>
-							
+								<a href="/KinoBaza_PHP/views/silicon.php" class="btn btn-lg btn-warning pull-right">подробнее</a>
+
 							</div>
 						</div>
 					</div>
 					<div class="margin-8 clear"></div>
-				</div>	
+				</div>
 				<div class="col-lg-3 col-lg-pull-9">
 					<div class="panel panel-info hidden-xs">    <div class="panel-heading"><div class="sidebar-header">поиск</div></div>
 						<div class="panel-body">
@@ -151,7 +102,7 @@
 										<input type="search" class="form-control input-lg" placeholder="Ваш запрос">
 										<div class="input-group-btn">
 											<button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-										</div> 
+										</div>
 									</div>
 								</div>
 							</form>
@@ -183,48 +134,48 @@
 					<div class="panel panel-info">
 						<div class="panel-heading"><div class="sidebar-header">рейтинг фильмов</div></div>
 						<div class="panel-body">
-							
+
 							<ul class="list-group">
 								<li class="list-group-item list-group-warning">
 									<span class="badge">8.9</span>
-									<a href="/KinoBaza/films/Inter.html">Интестеллар</a>
+									<a href="/KinoBaza_PHP/views/Inter.php">Интестеллар</a>
 								</li>
 								<li class="list-group-item list-group-warning">
 									<span class="badge">8.7</span>
-									<a href="/KinoBaza/films/max.html">Безумный макс</a>
+									<a href="/KinoBaza_PHP/views/max.php">Безумный макс</a>
 								</li>
 								<li class="list-group-item list-group-warning">
 									<span class="badge">8.3</span>
-									<a href="/KinoBaza/films/matrix.html">Матрица</a>
+									<a href="/KinoBaza_PHP/views/matrix.php">Матрица</a>
 								</li>
 								<li class="list-group-item list-group-warning">
 									<span class="badge">8.1</span>
-									<a href="/KinoBaza/films/atlas.html">Облачный атлас</a>
+									<a href="/KinoBaza_PHP/views/atlas.php">Облачный атлас</a>
 								</li>
-								
+
 							</ul>
 						</div>
 					</div>
                     <div class="panel panel-info">
 						<div class="panel-heading"><div class="sidebar-header">рейтинг cериалов</div></div>
 						<div class="panel-body">
-							
+
 							<ul class="list-group">
 								<li class="list-group-item list-group-warning">
 									<span class="badge">8.9</span>
-									<a href="/KinoBaza/serials/secret.html">секретные материалы</a>
+									<a href="/KinoBaza_PHP/views/secret.php">секретные материалы</a>
 								</li>
 								<li class="list-group-item list-group-warning">
 									<span class="badge">8.7</span>
-									<a href="/KinoBaza/serials/silicon.html">кремневая долина</a>
+									<a href="/KinoBaza_PHP/views/silicon.php">кремневая долина</a>
 								</li>
 								<li class="list-group-item list-group-warning">
 									<span class="badge">8.3</span>
-									<a href="/KinoBaza/serials/zombi.html">ходячие мертвецы</a>
+									<a href="/KinoBaza_PHP/views/zombi.php">ходячие мертвецы</a>
 								</li>
 								<li class="list-group-item list-group-warning">
 									<span class="badge">8.1</span>
-									<a href="/KinoBaza/serials/risk.html">во все тяжкие</a>
+									<a href="/KinoBaza_PHP/views/risk.php">во все тяжкие</a>
 								</li>
 							</ul>
 						</div>
@@ -234,13 +185,4 @@
 		</div>
 		<div class="clear"></div>
 	</div>
-	<footer>
-		<div class="container">
-			<p class="text-center"><a href="https://www.kinopoisk.ru/">KinoBaza</a></p>
-		</div>
-	</footer>
-	<!-- jQuery and JS bundle w/ Popper.js -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</body>
-</html>
+<?php  include '../views/templates/footer.php';?>

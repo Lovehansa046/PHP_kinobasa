@@ -1,9 +1,8 @@
 <?php
-
-function getMoviesFromDatabase()
+function getSerialsFromDatabase()
 {
 
-    include('../database_connect/database.php');
+//    include_('../database_connect/database.php');
 
     $conn = connectToDatabase();
 
@@ -12,29 +11,29 @@ function getMoviesFromDatabase()
         die("Ошибка подключения: " . $conn->connect_error);
     }
 
-    $query = "SELECT id, title, rating, image_address FROM movies WHERE title IN ('Интерстеллар', 'Безумный макс', 'Матрица', 'Облачный атлас')";
+    $query = "SELECT id, title, rating, image_address FROM movies WHERE title IN ('Секретные материалы', 'Силиконовая долина', 'Ходячие мертвецы', 'Во все тяжкие')";
     $result = $conn->query($query);
 
-    $movies = [];
+    $serials = [];
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            $movies[] = $row;
+            $serials[] = $row;
         }
     }
 
     $conn->close();
 
-    return $movies;
+    return $serials;
 }
 
-function displayMovies()
+function displaySerials()
 {
-    $movies = getMoviesFromDatabase();
+    $serials = getSerialsFromDatabase();
 
     echo '<div class="panel-body">';
 
-    foreach ($movies as $movie) {
+    foreach ($serials as $movie) {
         echo '<ul class="list-group">';
         echo '<li class="list-group-item list-group-warning">';
         echo '<span class="badge">' . $movie['rating'] . '</span>';
@@ -45,12 +44,4 @@ function displayMovies()
 
     echo '</div>';
 }
-
-
-
-
-//// Вызов функции для отображения фильмов
-//displayMovies();
-
-
 ?>

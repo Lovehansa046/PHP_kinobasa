@@ -21,7 +21,7 @@
                 ?>
                 <div class="margin-8"></div>
                 <?php
-                include('views/templates/serials.php');
+                include('views/templates/film.php');
                 displaySerialsFromDatabase();
                 ?>
                 <div class="margin-8"></div>

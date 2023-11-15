@@ -2,23 +2,9 @@
 function getMoviesFromDatabase()
 {
 
-    function connectToDatabases() {
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "kinobasa";
+    include_once('connecttoDB.php');
 
-        // Создаем соединение с базой данных
-        $conn = new mysqli($servername, $username, $password, $dbname);
-
-        // Проверяем соединение
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-        return $conn; // Возвращаем объект соединения
-    }
-    $conn = connectToDatabases();
+    $conn = connectToDatabase();
 
 
     if ($conn->connect_error) {

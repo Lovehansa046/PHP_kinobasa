@@ -15,47 +15,15 @@
                     </div>
                 </form>
 
-                <h2>новые фильмы</h2>
-                <hr>
-                <div class="row">
-                    <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="/KinoBaza_PHP/views/Inter.php"><img src="/KinoBaza_PHP/assets/img/inter.png" alt="интерстеллар"></a>
-                        <div class="film_label"><a href="/KinoBaza_PHP/html/views.php">интестеллар</a></div>
-                    </div>
-                    <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="/KinoBaza_PHP/views/matrix.php"><img src="/KinoBaza_PHP/assets/img/matrix.png" alt="матрица"></a>
-                        <div class="film_label"><a href="/KinoBaza_PHP/html/views.php">матрица</a></div>
-                    </div>
-                    <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="/KinoBaza_PHP/views/atlas.php"><img src="/KinoBaza_PHP/assets/img/cloud.png" alt="облачный атлас"></a>
-                        <div class="film_label"><a href="/KinoBaza_PHP/html/views.php">облачный атлас</a></div>
-                    </div>
-                    <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="/KinoBaza_PHP/views/max.php"><img src="/KinoBaza_PHP/assets/img/max.png" alt="безумный макс"></a>
-                        <div class="film_label"><a href="/KinoBaza_PHP/html/views.php">безумный макс</a></div>
-                    </div>
-                </div>
+                <?php
+                include('views/templates/film.php');
+                displayMoviesFromDatabase();
+                ?>
                 <div class="margin-8"></div>
-                <h2>новые сериалы</h2>
-                <hr>
-                <div class="row">
-                    <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="/KinoBaza_PHP/views/secret.php"><img src="/KinoBaza_PHP/assets/img/xfiles.png" alt="секретные материалы"></a>
-                        <div class="film_label"><a href="/KinoBaza_PHP/html/views.php">секретные материалы</a></div>
-                    </div>
-                    <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="/KinoBaza_PHP/views/silicon.php"><img src="/KinoBaza_PHP/assets/img/silicon.png" alt="кремневая долина"></a>
-                        <div class="film_label"><a href="/KinoBaza_PHP/html/views.php">кремневая долина</a></div>
-                    </div>
-                    <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="/KinoBaza_PHP/views/zombi.php"><img src="/KinoBaza_PHP/assets/img/dead.png" alt="ходячие мертвецы"></a>
-                        <div class="film_label"><a href="/KinoBaza_PHP/html/views.php">ходячие мертвецы</a></div>
-                    </div>
-                    <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="/KinoBaza_PHP/views/risk.php"><img src="/KinoBaza_PHP/assets/img/breakingbad.png" alt="во все тяжкие"></a>
-                        <div class="film_label"><a href="/KinoBaza_PHP/html/views.php">во все тяжкие</a></div>
-                    </div>
-                </div>
+                <?php
+                include('views/templates/serials.php');
+                displaySerialsFromDatabase();
+                ?>
                 <div class="margin-8"></div>
                 <a href="/KinoBaza_PHP/html/Inter_show.php"><h3>Как снимали Интерстеллар<h3></a>
                 <hr>

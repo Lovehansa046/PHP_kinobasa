@@ -38,50 +38,57 @@
 
     <div class="panel panel-info">
         <div class="panel-heading"><div class="sidebar-header">рейтинг фильмов</div></div>
-        <div class="panel-body">
-
-            <ul class="list-group">
-                <li class="list-group-item list-group-warning">
-                    <span class="badge">8.9</span>
-                    <a href="/KinoBaza_PHP/views/Inter.php">Интестеллар</a>
-                </li>
-                <li class="list-group-item list-group-warning">
-                    <span class="badge">8.7</span>
-                    <a href="/KinoBaza_PHP/views/max.php">Безумный макс</a>
-                </li>
-                <li class="list-group-item list-group-warning">
-                    <span class="badge">8.3</span>
-                    <a href="/KinoBaza_PHP/views/matrix.php">Матрица</a>
-                </li>
-                <li class="list-group-item list-group-warning">
-                    <span class="badge">8.1</span>
-                    <a href="/KinoBaza_PHP/views/atlas.php">Облачный атлас</a>
-                </li>
-            </ul>
-        </div>
+<!--        <div class="panel-body">-->
+<!---->
+<!--            <ul class="list-group">-->
+<!--                <li class="list-group-item list-group-warning">-->
+<!--                    <span class="badge">8.9</span>-->
+<!--                    <a href="/KinoBaza_PHP/views/Inter.php">Интестеллар</a>-->
+<!--                </li>-->
+<!--                <li class="list-group-item list-group-warning">-->
+<!--                    <span class="badge">8.7</span>-->
+<!--                    <a href="/KinoBaza_PHP/views/max.php">Безумный макс</a>-->
+<!--                </li>-->
+<!--                <li class="list-group-item list-group-warning">-->
+<!--                    <span class="badge">8.3</span>-->
+<!--                    <a href="/KinoBaza_PHP/views/matrix.php">Матрица</a>-->
+<!--                </li>-->
+<!--                <li class="list-group-item list-group-warning">-->
+<!--                    <span class="badge">8.1</span>-->
+<!--                    <a href="/KinoBaza_PHP/views/atlas.php">Облачный атлас</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+        <?php include('img_db_film.php');
+        displayMovies()
+        ?>
     </div>
     <div class="panel panel-info">
         <div class="panel-heading"><div class="sidebar-header">рейтинг cериалов</div></div>
-        <div class="panel-body">
+<!--        <div class="panel-body">-->
+<!---->
+<!--            <ul class="list-group">-->
+<!--                <li class="list-group-item list-group-warning">-->
+<!--                    <span class="badge">8.9</span>-->
+<!--                    <a href="/KinoBaza_PHP/views/secret.php">секретные материалы</a>-->
+<!--                </li>-->
+<!--                <li class="list-group-item list-group-warning">-->
+<!--                    <span class="badge">8.7</span>-->
+<!--                    <a href="/KinoBaza_PHP/views/silicon.php">кремневая долина</a>-->
+<!--                </li>-->
+<!--                <li class="list-group-item list-group-warning">-->
+<!--                    <span class="badge">8.3</span>-->
+<!--                    <a href="/KinoBaza_PHP/views/zombi.php">ходячие мертвецы</a>-->
+<!--                </li>-->
+<!--                <li class="list-group-item list-group-warning">-->
+<!--                    <span class="badge">8.1</span>-->
+<!--                    <a href="/KinoBaza_PHP/views/risk.php">во все тяжкие</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
 
-            <ul class="list-group">
-                <li class="list-group-item list-group-warning">
-                    <span class="badge">8.9</span>
-                    <a href="/KinoBaza_PHP/views/secret.php">секретные материалы</a>
-                </li>
-                <li class="list-group-item list-group-warning">
-                    <span class="badge">8.7</span>
-                    <a href="/KinoBaza_PHP/views/silicon.php">кремневая долина</a>
-                </li>
-                <li class="list-group-item list-group-warning">
-                    <span class="badge">8.3</span>
-                    <a href="/KinoBaza_PHP/views/zombi.php">ходячие мертвецы</a>
-                </li>
-                <li class="list-group-item list-group-warning">
-                    <span class="badge">8.1</span>
-                    <a href="/KinoBaza_PHP/views/risk.php">во все тяжкие</a>
-                </li>
-            </ul>
-        </div>
+        <?php include('img_db_serials.php');
+        displaySerials();
+        ?>
     </div>
 </div>
